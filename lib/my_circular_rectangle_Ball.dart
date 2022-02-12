@@ -41,6 +41,12 @@ class _MyBallState extends State<MyAnimatedRectagleCircule>
   }
 
   @override
+  void dispose() {
+    super.dispose();
+    controller.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(8.0),
